@@ -24,7 +24,7 @@ def load_image(url):
 def open_new_window():
     img = load_image(url)
     if img:
-        new_window = TopLevel()
+        new_window = Toplevel()
         new_window.title("Картинка с котиком")
         new_window.geometry("600x480")
         label = Label(new_window, image=img)
@@ -58,6 +58,5 @@ file_menu.add_command(label="Выход", command=exit)
 
 url = "https://cataas.com/cat"
 
-set_image()
 
 window.mainloop()
